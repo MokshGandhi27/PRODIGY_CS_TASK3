@@ -10,7 +10,7 @@ def check_strength(password):
     special_character_criteria = bool(
         re.match(r'[!@#$%^&*()_+{}\[\]:;\"\'|\\<,>.?/~`]', password))
 
-    # Assess strength based on criteria
+    
     strength = 0
     if length_criteria:
         strength += 1
@@ -32,7 +32,7 @@ def check_strength(password):
         return "Strong"
 
 
-# Example usage
+
 password = input("Enter your password: ")
 strength = check_strength(password)
 print("Password strength:", strength)
